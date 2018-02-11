@@ -5,13 +5,17 @@
   body {
     width: 100%;
     font-family: sans-serif;
-    background-color: rgb(255,255,255);
+    background-color: rgb(250,227,235);
     overflow-x: hidden;
-    overflow-y: hidden;
     display: grid;
-    grid-template-columns: 350px 1fr 350px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: auto 70px auto 1fr;
     align-items: center;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
   }
 
   .gallery {
@@ -90,16 +94,20 @@
   @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
   @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 
+  @-webkit-keyframes fadeColor { from { color: rgb(229,172,135); } to { color:white; } }
+  @-moz-keyframes fadeColor { from { color: rgb(229,172,135); } to { color: white; } }
+  @keyframes fadeColor { from { color: rgb(229,172,135); } to { color: white; } }
+
   .item img {
     opacity:0;
   }
 
   .bg {
-    -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+    -webkit-animation:fadeIn ease-in 1; 
     -moz-animation:fadeIn ease-in 1;
     animation:fadeIn ease-in 1;
   
-    -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -webkit-animation-fill-mode:forwards;  
     -moz-animation-fill-mode:forwards;
     animation-fill-mode:forwards;
 
@@ -175,14 +183,14 @@
   }
 
   header {
-    grid-column: span 3;
+    grid-column: span 5;
     justify-content: center;
     margin-top: 25px;
     width: 100%;
   }
 
   .logo {
-    grid-column: 2 / 2;
+    grid-column: 3 / 3;
     display: grid;
     justify-content: center;
   }
@@ -198,15 +206,38 @@
   display: grid;
   justify-content: center;
   align-content: center;
-  grid-column: span 3;
+  grid-column: span 5;
 }
 
-ul {
+.nav-home {
   padding: 0;
   list-style: none;
-  color: rgb(255,255,255);
+  color: rgb(229,172,135);
   width: 100%;
-  margin-left: -39;
+
+  -webkit-animation:fadeColor ease-in 1; 
+  -moz-animation:fadeColor ease-in 1;
+  animation:fadeColor ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;  
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+
+  -webkit-animation-delay: 2.7s;
+  -moz-animation-delay: 2.7s;
+  animation-delay: 2.7s;
+
+}
+
+.nav-alt {
+  padding: 0;
+  list-style: none;
+  color: rgb(229,172,135);
+  width: 100%;
 }
 
 li {
@@ -214,7 +245,7 @@ li {
   display: inline;
   font-family: 'Merriweather', serif;
   text-shadow: 2px 8px 10px rgba(0,0,0,0.8);
-  margin-right: 10px;
+  border-right: 1px black;
 }
 
 li:hover {
@@ -222,14 +253,14 @@ li:hover {
 }
 
 .blurb {
-  grid-column: 2 / 2;
+  grid-column: 2 / 5;
 
   opacity: 0;
-  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -webkit-animation:fadeIn ease-in 1;
   -moz-animation:fadeIn ease-in 1;
   animation:fadeIn ease-in 1;
 
-  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -webkit-animation-fill-mode:forwards;
   -moz-animation-fill-mode:forwards;
   animation-fill-mode:forwards;
 
@@ -241,7 +272,8 @@ li:hover {
   -moz-animation-delay: 4.7s;
   animation-delay: 4.7s;
 }
-h1 {
+
+.callout {
   font-family: 'Merriweather', serif;
   color: rgb(250,227,235);
   text-align: center;
@@ -254,4 +286,20 @@ p {
   color: rgb(250,227,235);
   text-align: center;
   text-shadow: 2px 8px 10px rgba(0,0,0,0.8);
+}
+
+.menu-cont {
+  grid-column: span 5;
+  width: 100%;
+}
+.menu {
+}
+.menu-items {
+  display: grid;
+  grid-template-columns: repeat(5, 150px);
+  grid-gap: 20px;
+}
+.menu-pic {
+  height: 150px;
+  width: 150px;
 }
