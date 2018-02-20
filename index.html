@@ -36,7 +36,7 @@
     <div class = "divider">
         <h1>Menu!</h1>
     </div>
-    <article class = "menu-cont">
+    <article class = "menu-cont" id = "menu">
             <h2 class = "menu-names" id = "top-item">Breads</h2>
             <hr>
             <div class="menu-items">
@@ -102,7 +102,7 @@
                 </div>
             </div>
     </article>
-    <div class = "menu-shadow">
+    <div class = "menu-shadow" id = "menu-shadow">
             
     </div>
     <div class = "divider">
@@ -113,7 +113,7 @@
             <form id="contact" action="" method="post">
                         <h4>Contact to Place Order or for any Questions!</h4>
                         <fieldset>
-                          <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+                          <input placeholder="Your name" type="text" tabindex="1" required>
                         </fieldset>
                         <fieldset>
                           <input placeholder="Your Email Address" type="email" tabindex="2" required>
@@ -132,7 +132,10 @@
     <div class = "cont-shadow">
             
     </div>
-    <script src="javascript.js"></script>
+    <script>        
+        var offsetHeight = document.getElementById('menu').clientHeight;
+        document.getElementById('menu-shadow').style.height = (offsetHeight) + "px";
+    </script>
 </body>
 
 </html>
