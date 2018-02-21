@@ -10,12 +10,24 @@ body {
 }
 
 .nav {
-    background-color: rgba(255, 180, 94, 1);
-    height: 75px;
+    background-color: rgb(255, 255, 255);
+    height: 500px;
     width: 100%;
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 75% 100%, 50% calc(100% - 5vw), 25% 100%, 0% 100%);
     position: absolute;
-    z-index: 3;
+    display: grid;
+    justify-content: center;
+    z-index: -2;
+}
+
+.logo {
+    height: 450px;
+    width: 100%;
+    margin-top: -95px;
+}
+
+.logo-img {
+    height: 450px;
 }
 
 .head-bg {
@@ -26,19 +38,6 @@ body {
     width: 100%;
     z-index: -1;
     background-repeat: no-repeat;
-}
-
-.logo {
-    grid-column: 1 / -1;
-    display: grid;
-    justify-content: center;
-    background-color: rgb(255,255,255);
-    z-index: -1;
-}
-
-.logo img {
-    max-height: 450px;
-    margin-top: -75px;
 }
 
 .head-cont {
@@ -129,7 +128,9 @@ p {
     display: grid;
     justify-content: center;
     font-family: 'Slabo 27px', serif;
-    color: rgb(253, 184, 184);
+    color: rgb(255, 255, 255);
+    margin-top: 55px;
+    font-size: 3em;
 }
 
 
@@ -150,12 +151,11 @@ p {
     width: 100%;
     grid-column: 1 / -1;
     grid-row: 4 / 4;
-    top: 100px;
     background: rgba(255, 180, 94, 0.8);
     clip-path: polygon(
         0% 0%, 5% calc(0% + 5vw), 10% 0%, 15% calc(0% + 5vw), 20% 0%, 25% calc(0% + 5vw), 30% 0%, 35% calc(0% + 5vw), 40% 0%, 45% calc(0% + 5vw), 50% 0%, 55% calc(0% + 5vw), 60% 0%, 65% calc(0% + 5vw), 70% 0%, 75% calc(0% + 5vw), 80% 0%, 85% calc(0% + 5vw), 90% 0%, 95% calc(0% + 5vw), 100% 0%, 100% 100%, 95% calc(100% - 5vw), 90% 100%, 85% calc(100% - 5vw), 80% 100%, 75% calc(100% - 5vw), 70% 100%, 65% calc(100% - 5vw), 60% 100%, 55% calc(100% - 5vw), 50% 100%, 45% calc(100% - 5vw), 40% 100%, 35% calc(100% - 5vw), 30% 100%, 25% calc(100% - 5vw), 20% 100%, 15% calc(100% - 5vw), 10% 100%, 5% calc(100% - 5vw), 0% 100%
     );
-    z-index: -2;
+    z-index: -1;
     content: "";
 }
 
@@ -164,7 +164,7 @@ p {
     }
 
 #top-item {
-    margin-top: 75px;
+margin-top: -75px;
 }
 
 hr {
@@ -388,7 +388,23 @@ hr {
     .blurb-header {
         font-size: 4em;
     }
+    .menu-cont {
+        display: grid;
+        justify-content: center;
+    }
+
+    .divider {
+        margin-top: 0px;
+        padding-bottom: 25px;
+    }
   }
+    .menu-names {
+        text-align: center;
+    }
+    .menu-items {
+        display: grid;
+        justify-content: center;
+    }
 
 @media (max-width: 400px) {
     .contact-wrap {
@@ -399,6 +415,6 @@ hr {
 @media (max-width: 1000px) {
     .logo img {
         max-height: 200px;
-        margin-top: 20px;
+        margin-top: 75px;
     }
   }
