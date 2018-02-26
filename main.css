@@ -6,9 +6,6 @@
     overflow-x: hidden;
     overflow-y: hidden;
     margin: 0;
-    background-image: url(images/bagels.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 .wrapper {
@@ -18,6 +15,9 @@
     overflow-y: hidden;
     margin: 0;
     position: fixed;
+    background-image: url(images/bagels.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .overlay {
