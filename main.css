@@ -87,11 +87,11 @@ h3 {
 }
 
 .transform {
-    -webkit-transition: all .50s ease;  
-    -moz-transition: all .50s ease;  
-    -o-transition: all .50s ease;  
-    -ms-transition: all .50s ease;  
-    transition: all .50s ease;
+    -webkit-transition: all .75s ease;  
+    -moz-transition: all .75s ease;  
+    -o-transition: all .75s ease;  
+    -ms-transition: all .75s ease;  
+    transition: all .75s ease;
   }
   
   .transform-active {
@@ -129,7 +129,7 @@ li:hover {
     }
 
     .transform-shadow-active {
-        transform: translateX(-120vw);
+        transform: translateX(-111vw);
       }
 }
 /* Main Page */
@@ -169,6 +169,7 @@ p {
 
     .blurb-header {
         font-size: 7.5em;
+        margin-top: -50px;
     }
 
     p {
