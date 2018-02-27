@@ -236,6 +236,10 @@ hr {
     .menu-items{
         grid-template-columns: 1fr;
     }
+
+    .menu-names {
+        text-align: center;
+    }
 }
 
 .menu-img {
