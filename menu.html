@@ -3,94 +3,257 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta http-equiv="X-UA-Compatible">
     <link rel="stylesheet" href="main.css">
-    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Quicksand|Slabo+27px" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Quicksand|Slabo+27px" rel="stylesheet">
     <title>Baked!</title>
 </head>
 
 <body>
-    <nav class = "nav">
-        <div class = "logo">
-            <img src = "images/logo1.png" class = "logo-img">
-        </div>
+    <!-- Nav Bar! -->
+    <button class="menu-button" onclick="toggleNav()">
+        <img src="images/menu-icon.svg">
+        <h3>menu</h3>
+    </button>
+    <nav id="nav-bar" class="transform">
+        <img src="images/logo1.png" class="logo">
+        <ul>
+            <li ><a href = "index.html">Home</a></li>
+            <li ><a href = "menu.html">Breads</a></li>
+            <li>Contact</li>
+            <li>About</li>
+        </ul>
     </nav>
-    <article class = "menu-cont" id = "menu">
-            <div class = "divider">
-                    <h1>Menu!</h1>
-                </div>
-            <h2 class = "menu-names" id = "top-item">Breads</h2>
-            <hr>
-            <div class="menu-items">
-                <div class="menu-pic">
-                    <img src="images/bg-1.jpg" class="menu-img">
-                    <div class="img-overlay"></div>
-                </div>
-                <div class="menu-pic">
-                    <img src="images/bg-2.jpg" class="menu-img">
-                    <div class="img-overlay"></div>
-                </div>
-                <div class="menu-pic">
-                    <img src="images/bg-4.jpg" class="menu-img">
-                    <div class="img-overlay"></div>
-                </div>
-            </div>
-            <h2 class = "menu-names">Cakes</h2>
-            <hr>
-            <div class="menu-items">
-                <div class="menu-pic">
-                    <img src="images/bg-5.jpg" class="menu-img">
-                    <div class="img-overlay"></div>
-                </div>
-                <div class="menu-pic">
-                    <img src="images/bg-6.jpg" class="menu-img">
-                    <div class="img-overlay"></div>
-                </div>
-                <div class="menu-pic">
-                    <img src="images/bg-7.jpg" class="menu-img">
-                    <div class="img-overlay"></div>
-                </div>
-            </div>
-            <h2 class = "menu-names">Cookies</h2>
-            <hr>
-            <div class="menu-items">
-                <div class="menu-pic">
-                    <img src="images/bg-3.jpg" class="menu-img">
-                    <div class="img-overlay"></div>
-                </div>
-                <div class="menu-pic">
-                    <img src="images/bg-4.jpg" class="menu-img">
-                    <div class="img-overlay"></div>
-                </div>
-            </div>
-            <h2 class = "menu-names">Pastries</h2>
-            <hr>
-            <div class="menu-items">
-                <div class="menu-pic">
-                    <img src="images/bg-6.jpg" class="menu-img">
-                    <div class="img-overlay">
-                        <h3>Item Name!</h3>
-                        <p>This is a quick description!</p>
-                        <h4>$100</h4>
-                    </div>
-                </div>
-                <div class="menu-pic">
-                    <img src="images/bg-7.jpg" class="menu-img">
-                    <div class="img-overlay"></div>
-                </div>
-                <div class="menu-pic">
-                    <img src="images/bg-9.jpg" class="menu-img">
-                    <div class="img-overlay"></div>
-                </div>
-            </div>
-    </article>
-    <div class = "menu-shadow" id = "menu-shadow">
-            
+    <div id="nav-shadow" class="transform">
+
     </div>
-    <script>        
-        var offsetHeight = document.getElementById('menu').clientHeight;
-        document.getElementById('menu-shadow').style.height = (offsetHeight) + "px";
+
+    <!-- Nav Bar End! -->
+    <!-- Logo -->
+    <div class="logo-top">
+        <img src="images/logo1.png" class="logo-top">
+    </div>
+    <!-- Logo End -->
+    <!-- Content -->
+    <article class="menu-cont" id="menu">
+        <h2 class="menu-names" id="top-item">Breads</h2>
+        <hr>
+        <div class="menu-items">
+            <div id="bread-img" class="menu-img">
+
+            </div>
+            <div class="items">
+                <dl>
+                    <dt>Artisan Bread</dt>
+                    <dd>This delicious piece of bread was plucked from the unique artsy-fartsy tree located at the top of Mt.
+                        Artisia and comes with a side of yum. How can you say "no" to a treat like this? You can't. You just
+                        can't.
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>Artisan Bread</dt>
+                    <dd>This delicious piece of bread was plucked from the unique artsy-fartsy tree located at the top of Mt.
+                        Artisia and comes with a side of yum. How can you say "no" to a treat like this? You can't. You just
+                        can't.
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>Artisan Bread</dt>
+                    <dd>This delicious piece of bread was plucked from the unique artsy-fartsy tree located at the top of Mt.
+                        Artisia and comes with a side of yum. How can you say "no" to a treat like this? You can't. You just
+                        can't.
+                    </dd>
+                </dl>
+            </div>
+            <div class="items">
+                <dl>
+                    <dt>Artisan Bread</dt>
+                    <dd>This delicious piece of bread was plucked from the unique artsy-fartsy tree located at the top of Mt.
+                        Artisia and comes with a side of yum. How can you say "no" to a treat like this? You can't. You just
+                        can't.
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>Artisan Bread</dt>
+                    <dd>This delicious piece of bread was plucked from the unique artsy-fartsy tree located at the top of Mt.
+                        Artisia and comes with a side of yum. How can you say "no" to a treat like this? You can't. You just
+                        can't.
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>Artisan Bread</dt>
+                    <dd>This delicious piece of bread was plucked from the unique artsy-fartsy tree located at the top of Mt.
+                        Artisia and comes with a side of yum. How can you say "no" to a treat like this? You can't. You just
+                        can't.
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <h2 class="menu-names">Cakes</h2>
+        <hr>
+        <div class="menu-items">
+            <div id="cake-img" class="menu-img">
+
+            </div>
+            <div class="items">
+                <dl>
+                    <dt>Artisan Bread</dt>
+                    <dd>This delicious piece of bread was plucked from the unique artsy-fartsy tree located at the top of Mt.
+                        Artisia and comes with a side of yum. How can you say "no" to a treat like this? You can't. You just
+                        can't.
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>Artisan Bread</dt>
+                    <dd>This delicious piece of bread was plucked from the unique artsy-fartsy tree located at the top of Mt.
+                        Artisia and comes with a side of yum. How can you say "no" to a treat like this? You can't. You just
+                        can't.
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>Artisan Bread</dt>
+                    <dd>This delicious piece of bread was plucked from the unique artsy-fartsy tree located at the top of Mt.
+                        Artisia and comes with a side of yum. How can you say "no" to a treat like this? You can't. You just
+                        can't.
+                    </dd>
+                </dl>
+            </div>
+            <div class="items">
+                <dl>
+                    <dt>Artisan Bread</dt>
+                    <dd>This delicious piece of bread was plucked from the unique artsy-fartsy tree located at the top of Mt.
+                        Artisia and comes with a side of yum. How can you say "no" to a treat like this? You can't. You just
+                        can't.
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>Artisan Bread</dt>
+                    <dd>This delicious piece of bread was plucked from the unique artsy-fartsy tree located at the top of Mt.
+                        Artisia and comes with a side of yum. How can you say "no" to a treat like this? You can't. You just
+                        can't.
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>Artisan Bread</dt>
+                    <dd>This delicious piece of bread was plucked from the unique artsy-fartsy tree located at the top of Mt.
+                        Artisia and comes with a side of yum. How can you say "no" to a treat like this? You can't. You just
+                        can't.
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <h2 class="menu-names">Cookies</h2>
+        <hr>
+        <div class="menu-items">
+            <div id="cookie-img" class="menu-img">
+
+            </div>
+            <div class="items">
+                <dl>
+                    <dt>Artisan Bread</dt>
+                    <dd>This delicious piece of bread was plucked from the unique artsy-fartsy tree located at the top of Mt.
+                        Artisia and comes with a side of yum. How can you say "no" to a treat like this? You can't. You just
+                        can't.
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>Artisan Bread</dt>
+                    <dd>This delicious piece of bread was plucked from the unique artsy-fartsy tree located at the top of Mt.
+                        Artisia and comes with a side of yum. How can you say "no" to a treat like this? You can't. You just
+                        can't.
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>Artisan Bread</dt>
+                    <dd>This delicious piece of bread was plucked from the unique artsy-fartsy tree located at the top of Mt.
+                        Artisia and comes with a side of yum. How can you say "no" to a treat like this? You can't. You just
+                        can't.
+                    </dd>
+                </dl>
+            </div>
+            <div class="items">
+                <dl>
+                    <dt>Artisan Bread</dt>
+                    <dd>This delicious piece of bread was plucked from the unique artsy-fartsy tree located at the top of Mt.
+                        Artisia and comes with a side of yum. How can you say "no" to a treat like this? You can't. You just
+                        can't.
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>Artisan Bread</dt>
+                    <dd>This delicious piece of bread was plucked from the unique artsy-fartsy tree located at the top of Mt.
+                        Artisia and comes with a side of yum. How can you say "no" to a treat like this? You can't. You just
+                        can't.
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>Artisan Bread</dt>
+                    <dd>This delicious piece of bread was plucked from the unique artsy-fartsy tree located at the top of Mt.
+                        Artisia and comes with a side of yum. How can you say "no" to a treat like this? You can't. You just
+                        can't.
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <h2 class="menu-names">Pastries</h2>
+        <hr>
+        <div class="menu-items">
+            <div id="pastry-img" class="menu-img">
+
+            </div>
+            <div class="items">
+                <dl>
+                    <dt>Artisan Bread</dt>
+                    <dd>This delicious piece of bread was plucked from the unique artsy-fartsy tree located at the top of Mt.
+                        Artisia and comes with a side of yum. How can you say "no" to a treat like this? You can't. You just
+                        can't.
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>Artisan Bread</dt>
+                    <dd>This delicious piece of bread was plucked from the unique artsy-fartsy tree located at the top of Mt.
+                        Artisia and comes with a side of yum. How can you say "no" to a treat like this? You can't. You just
+                        can't.
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>Artisan Bread</dt>
+                    <dd>This delicious piece of bread was plucked from the unique artsy-fartsy tree located at the top of Mt.
+                        Artisia and comes with a side of yum. How can you say "no" to a treat like this? You can't. You just
+                        can't.
+                    </dd>
+                </dl>
+            </div>
+            <div class="items">
+                <dl>
+                    <dt>Artisan Bread</dt>
+                    <dd>This delicious piece of bread was plucked from the unique artsy-fartsy tree located at the top of Mt.
+                        Artisia and comes with a side of yum. How can you say "no" to a treat like this? You can't. You just
+                        can't.
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>Artisan Bread</dt>
+                    <dd>This delicious piece of bread was plucked from the unique artsy-fartsy tree located at the top of Mt.
+                        Artisia and comes with a side of yum. How can you say "no" to a treat like this? You can't. You just
+                        can't.
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>Artisan Bread</dt>
+                    <dd>This delicious piece of bread was plucked from the unique artsy-fartsy tree located at the top of Mt.
+                        Artisia and comes with a side of yum. How can you say "no" to a treat like this? You can't. You just
+                        can't.
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </article>
+    <div class="menu-shadow" id="menu-shadow">
+
+    </div>
+    <script src="javascript.js">
     </script>
 </body>
 
