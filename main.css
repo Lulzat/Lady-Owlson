@@ -10,6 +10,12 @@
     right: 0;
     z-index: 99;
     color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.hamburger {
+    max-height: 40px;
+    max-width: 40px;
 }
 
 a {

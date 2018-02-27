@@ -11,39 +11,44 @@
 </head>
 
 <body id="index">
-    <div class = "wrapper-index">
-    <button class="menu-button" onclick="toggleNav()">
-        <img src="images/menu-icon.svg"> <h3>menu</h3>
-    </button>
-    <header class="header">
-        <div class="header-cont">
-            <h1 class="big text, blurb-header">The Proof</h1>
-            <p id = "blurb-text">It's in the pudding. I have a Jiji rubbing his head on my face currently while I'm trying to code. He is so adorable
-                stepping on my keyboard. Oh, now he is digging his happy claws into my leg. "Thank you, Jiji!". I hope you
-                enjoy this site! Blah blah blah. Lorem Ipsum stuff.
-            </p>
+    <div class="wrapper-index">
+        <button class="menu-button" onclick="toggleNav()">
+            <img src="images/menu.png" class="hamburger">
+            <h3>menu</h3>
+        </button>
+        <header class="header">
+            <div class="header-cont">
+                <h1 class="big text, blurb-header">The Proof</h1>
+                <p id="blurb-text">It's in the pudding. I have a Jiji rubbing his head on my face currently while I'm trying to code. He is
+                    so adorable stepping on my keyboard. Oh, now he is digging his happy claws into my leg. "Thank you, Jiji!".
+                    I hope you enjoy this site! Blah blah blah. Lorem Ipsum stuff.
+                </p>
+            </div>
+        </header>
+
+        <nav id="nav-bar" class="transform">
+            <img src="images/logo1.png" class="logo">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="menu.html">Breads</a>
+                </li>
+                <li>Contact</li>
+                <li>About</li>
+            </ul>
+        </nav>
+        <div id="nav-shadow" class="transform">
+
         </div>
-    </header>
 
-    <nav id = "nav-bar" class ="transform">
-        <img src = "images/logo1.png" class = "logo">
-        <ul>
-            <li ><a href = "index.html">Home</a></li>
-            <li ><a href = "menu.html">Breads</a></li>
-            <li>Contact</li>
-            <li>About</li>
-        </ul>
-    </nav>
-    <div id ="nav-shadow" class ="transform">
+        <div class="overlay">
 
-    </div>
-
-    <div class="overlay">
-
-    </div>
+        </div>
     </div>
     <script src="javascript.js">
-</script>
+    </script>
 </body>
 
 </html>
