@@ -246,6 +246,10 @@ hr {
     .menu-names {
         text-align: center;
     }
+
+    .logo-top {
+       margin-left: 20px;       
+    }
 }
 
 .menu-img {
