@@ -2,49 +2,73 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible">
-    <link rel="stylesheet" href="main.css">
-    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Quicksand|Slabo+27px" rel="stylesheet"> 
-    <title>Baked!</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta http-equiv="X-UA-Compatible">
+  <link rel="stylesheet" href="main.css">
+  <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Quicksand|Slabo+27px" rel="stylesheet">
+  <title>The Proof!</title>
 </head>
 
-<body>
-    <div class = "logo">
-            <img src = "images/logo1.png" class = "logo">
+<body id="contact-body">
+  <!-- Nav Bar! -->
+  <button class="menu-button" onclick="toggleNav()">
+    <img src="images/menu.png" class="hamburger">
+    <h3>menu</h3>
+  </button>
+  <nav id="nav-bar" class="transform">
+    <img src="images/logo1.png" class="logo">
+    <ul>
+      <li>
+        <a href="index.html">Home</a>
+      </li>
+      <li>
+        <a href="menu.html">Breads</a>
+      </li>
+      <li>
+        <a href="contact.html">Contact</a>
+      </li>
+      <li>
+        <a href="about.html">About</a>
+      </li>
+    </ul>
+  </nav>
+  <div id="nav-shadow" class="transform">
+
+  </div>
+
+  <!-- Nav Bar End! -->
+  <!-- Logo -->
+  <div class="logo-top">
+    <img src="images/logo1.png" class="logo-top">
+  </div>
+  <!-- Logo End -->
+  <!-- Content -->
+  <article class="cont-cont">
+    <h4>Contact to Place Order or for any Questions!</h4>
+    <hr>
+    <div class="contact-wrap">
+      <form id="contact" action="" method="post">
+        <fieldset>
+          <input placeholder="Your name" type="text" tabindex="1" required>
+        </fieldset>
+        <fieldset>
+          <input placeholder="Your Email Address" type="email" tabindex="2" required>
+        </fieldset>
+        <fieldset>
+          <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3" required>
+        </fieldset>
+        <fieldset>
+          <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
+        </fieldset>
+        <fieldset>
+          <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+        </fieldset>
+      </form>
     </div>
-    <div class = "divider">
-    <h1>Contact Me!</h1>
-    </div>
-    <article class = "cont-cont">
-            <div class = "contact-wrap">
-            <form id="contact" action="" method="post">
-                        <h4>Contact to Place Order or for any Questions!</h4>
-                        <fieldset>
-                          <input placeholder="Your name" type="text" tabindex="1" required>
-                        </fieldset>
-                        <fieldset>
-                          <input placeholder="Your Email Address" type="email" tabindex="2" required>
-                        </fieldset>
-                        <fieldset>
-                          <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3" required>
-                        </fieldset>
-                        <fieldset>
-                          <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
-                        </fieldset>
-                        <fieldset>
-                          <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
-                        </fieldset>
-            </div>
-    </article>
-    <div class = "cont-shadow">
-            
-    </div>
-    <script>        
-        var offsetHeight = document.getElementById('menu').clientHeight;
-        document.getElementById('menu-shadow').style.height = (offsetHeight) + "px";
-    </script>
+  </article>
+  <script src="javascript.js">
+  </script>
 </body>
 
 </html>
