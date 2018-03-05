@@ -13,7 +13,7 @@
     text-align: center;
 }
 
-.hamburger {
+#hamburger {
     max-height: 40px;
     max-width: 40px;
 }
@@ -106,12 +106,12 @@ li:hover {
 }
 
 
-/* home page */
+/* Home Page */
 
 
-/* body */
+/* Body */
 
-#index {
+#index-body {
     width: 100%;
     height: 100%;
     overflow-x: hidden;
@@ -119,7 +119,7 @@ li:hover {
     margin: 0;
 }
 
-.wrapper-index {
+#wrapper {
     width: 100%;
     height: 100%;
     overflow-x: hidden;
@@ -155,7 +155,7 @@ li:hover {
     grid-template-rows: 100vh;
 }
 
-.blurb-header {
+#blurb-header {
     font-family: 'Slabo 27px', serif;
     font-size: 10em;
     color: rgb(255, 255, 255);
@@ -187,9 +187,9 @@ li:hover {
 }
 
 
-/* menu page */
+/* Menu Page */
 
-#menu-body {
+#page-body {
     height: 100%;
     width: 100%;
     margin: 0;
@@ -294,7 +294,7 @@ dd {
 }
 
 
-/* contact page */
+/* Contact Page */
 
 #contact-body {
     height: 100%;
@@ -407,7 +407,7 @@ fieldset {
 }
 
 
-/* about page */
+/* About Page */
 
 #about-text {
     font-family: 'Quicksand', sans-serif;
